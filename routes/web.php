@@ -17,7 +17,10 @@ Route::get('dashboard', [DashboardController::class, 'index'])->middleware(['aut
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('proyectos', [ProyectoController::class, 'index'])->name('proyectos.index');
+    Route::post('proyectos', [ProyectoController::class, 'store'])->name('proyectos.store');
     Route::get('proyectos/{proyecto}', [ProyectoController::class, 'show'])->name('proyectos.show');
+    Route::put('proyectos/{proyecto}', [ProyectoController::class, 'update'])->name('proyectos.update');
+    Route::delete('proyectos/{proyecto}', [ProyectoController::class, 'destroy'])->name('proyectos.destroy');
 
     Route::get('proyectos/{proyecto}/alumnos', [AlumnoController::class, 'index'])->name('alumnos.index');
     Route::post('proyectos/{proyecto}/alumnos', [AlumnoController::class, 'store'])->name('alumnos.store');

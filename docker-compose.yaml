@@ -1,0 +1,29 @@
+services:
+  mysql:
+    image: mysql:8.0 # Es recomendable fijar una versión
+    container_name: mysql_db
+    restart: always
+    ports:
+      - "23306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    environment:
+      MYSQL_USER: ${DB_USERNAME}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+      MYSQL_DATABASE: ${DB_DATABASE}
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+
+  phpmyadmin:
+    image: phpmyadmin
+    container_name: phpmyadmin_db
+    restart: always
+    ports:
+      - "8101:80"
+    environment:
+      PMA_HOST: mysql
+      PMA_ARBITRARY: 1
+    depends_on:
+      - mysql
+
+volumes:
+  mysql_data:

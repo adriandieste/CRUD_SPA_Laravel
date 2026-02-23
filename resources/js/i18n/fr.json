@@ -1,0 +1,83 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "dashboard": "Tableau de bord",
+    "proyectos": "Projets",
+    "alumnos": "Étudiants",
+    "profile": "Profil",
+    "logout": "Déconnexion",
+    "login": "Connexion",
+    "register": "S'inscrire"
+  },
+  "common": {
+    "welcome": "Bienvenue",
+    "add": "Ajouter",
+    "edit": "Modifier",
+    "delete": "Supprimer",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "back": "Retour",
+    "search": "Rechercher",
+    "actions": "Actions",
+    "confirm_delete": "Êtes-vous sûr de vouloir supprimer ceci?",
+    "yes": "Oui",
+    "no": "Non",
+    "success": "Succès",
+    "error": "Erreur",
+    "loading": "Chargement...",
+    "no_data": "Aucune donnée disponible",
+    "language": "Langue",
+    "password": "Mot de passe",
+    "remember": "Se souvenir de moi",
+    "no_account": "Vous n'avez pas de compte?",
+    "have_account": "Vous avez déjà un compte?",
+    "or": "Ou"
+  },
+  "hero": {
+    "title": "Bienvenue dans l'application CRUD",
+    "subtitle": "Gérez vos projets et étudiants efficacement",
+    "cta": "Commencer"
+  },
+  "dashboard": {
+    "title": "Tableau de bord",
+    "welcome": "Bienvenue",
+    "proyectos": "Mes Projets",
+    "alumnos": "Mes Étudiants"
+  },
+  "proyectos": {
+    "title": "Projets",
+    "add": "Nouveau Projet",
+    "name": "Nom",
+    "description": "Description",
+    "students_count": "Nombre d'Étudiants",
+    "no_projects": "Vous n'avez aucun projet",
+    "created_success": "Projet créé avec succès",
+    "updated_success": "Projet modifié avec succès",
+    "deleted_success": "Projet supprimé avec succès"
+  },
+  "alumnos": {
+    "title": "Étudiants",
+    "add": "Nouvel Étudiant",
+    "name": "Nom",
+    "email": "Email",
+    "phone": "Téléphone",
+    "birthdate": "Date de Naissance",
+    "no_students": "Aucun étudiant dans ce projet",
+    "created_success": "Étudiant créé avec succès",
+    "updated_success": "Étudiant modifié avec succès",
+    "deleted_success": "Étudiant supprimé avec succès"
+  },
+  "forms": {
+    "required": "Les champs marqués avec * sont obligatoires",
+    "invalid_email": "Email invalide",
+    "email_exists": "Cet email est déjà enregistré",
+    "name": "Nom",
+    "confirm_password": "Confirmer le Mot de passe",
+    "password_requirements": "Le mot de passe doit contenir:",
+    "min_8_chars": "Minimum 8 caractères",
+    "uppercase_lowercase": "Majuscules et minuscules",
+    "number_special": "Nombres et caractères spéciaux"
+  },
+  "password": {
+    "forgot": "Vous avez oublié votre mot de passe?"
+  }}

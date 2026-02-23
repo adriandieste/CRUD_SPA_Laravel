@@ -1,0 +1,75 @@
+======================================================================
+PRÁCTICA: APLICACIÓN WEB LARAVEL + VUE.JS (SPA/INERTIA)
+======================================================================
+
+OBJETIVO GENERAL
+----------------
+Desarrollar una aplicación web utilizando Laravel y Vue.js que implemente
+una arquitectura de componentes, autenticación, gestión CRUD y 
+traducciones multiidioma[cite: 1, 2].
+
+REQUISITOS TÉCNICOS
+-------------------
+
+1. ESTRUCTURA Y DISEÑO (VUE COMPONENTS) [cite: 3]
+   - El diseño debe basarse en componentes de Vue (.vue)[cite: 3].
+   - Layout obligatorio (AppLayout.vue) que contenga[cite: 5]:
+     * Header (con selector de idioma)[cite: 5, 15].
+     * Nav (navegación reactiva)[cite: 5].
+     * Footer[cite: 5].
+   - Uso de Tailwind CSS (opcionalmente DaisyUI) para el diseño[cite: 19].
+
+2. PÁGINA PRINCIPAL (PÁGINA DE INICIO) [cite: 6]
+   - Si el usuario NO está autenticado[cite: 7]:
+     * Mostrar sección Hero de bienvenida[cite: 7].
+     * Enlaces a componentes de Login y Register[cite: 8].
+   - Si el usuario ESTÁ autenticado[cite: 8]:
+     * Mostrar nombre del usuario y botón de Logout[cite: 8].
+     * Mostrar Dashboard con tarjetas (Cards) de navegación (Proyectos/Alumnos)[cite: 9].
+
+3. AUTENTICACIÓN [cite: 10]
+   - Implementar mediante Laravel Sanctum o Breeze (Inertia)[cite: 10]:
+     * Registro, Inicio de sesión y Cierre de sesión[cite: 10].
+     * La UI debe reaccionar al estado 'auth' del usuario[cite: 10].
+
+4. GESTIÓN DE PROYECTOS [cite: 11]
+   - Sección accesible desde el menú principal[cite: 11, 12].
+   - Carga inicial de datos mediante Seeders de Laravel[cite: 12].
+
+5. GESTIÓN DE ALUMNOS (CRUD REACTIVO) [cite: 13, 14]
+   - Interfaz basada en una tabla con operaciones completas[cite: 14]:
+     * Create: Formulario reactivo con validaciones[cite: 14, 19].
+     * Read: Listado con paginación (sin recarga de página)[cite: 14].
+     * Update: Edición de datos existentes[cite: 14].
+     * Delete: Borrado con confirmación mediante SweetAlert2[cite: 14].
+   - Requisitos de UX[cite: 14]:
+     * Mensajes de confirmación (Toasts) tras cada acción[cite: 14].
+     * Botones de "Cancelar" y "Volver" en todas las vistas[cite: 14].
+
+6. TRADUCCIONES (I18N) [cite: 14]
+   - Idiomas requeridos: Castellano, Inglés y Francés[cite: 14].
+   - Selector de idioma funcional que[cite: 15]:
+     * Indique el idioma activo[cite: 15].
+     * Persista la elección durante la navegación[cite: 15].
+
+7. CONTROL DE VERSIONES (GIT) [cite: 15]
+   - Clonar repositorio al inicio[cite: 15].
+   - Uso obligatorio de Git durante todo el proceso[cite: 16].
+   - Mínimo un PUSH diario reflejando el trabajo de clase[cite: 17].
+   - Commits con mensajes descriptivos[cite: 20].
+
+8. DOCUMENTACIÓN (README.MD) [cite: 14]
+   - Explicación del proyecto[cite: 14].
+   - Requisitos (Node.js, PHP, Composer)[cite: 14].
+   - Pasos de instalación (npm install, migrate, seed)[cite: 14].
+   - Resumen de la estructura de componentes Vue[cite: 14].
+
+9. MEJORAS OPCIONALES [cite: 18]
+   - Protección de rutas mediante Middleware[cite: 18].
+   - Validación de formularios con mensajes traducidos[cite: 19].
+   - Control de errores y logs básicos[cite: 20].
+
+ENTREGA [cite: 21]
+-----------------
+Mediante el repositorio de Git con el historial de commits completo[cite: 21].
+======================================================================

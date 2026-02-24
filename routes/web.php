@@ -8,6 +8,9 @@ use Inertia\Inertia;
 use Laravel\Fortify\Features;
 
 Route::get('/', function () {
+    if (auth()->check()) {
+        return redirect('/proyectos');
+    }
     return Inertia::render('Welcome', [
         'canRegister' => Features::enabled(Features::registration()),
     ]);
